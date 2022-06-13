@@ -314,9 +314,6 @@ body.light-theme {
 .home_name {
   font-size: var(--biggest-font-size);
 }
-.home_img {
-  width: 800px;
-}
 
 .home_handle {
   justify-self: center;
@@ -333,6 +330,9 @@ body.light-theme {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
+}
+.home_img {
+  width: 800px;
 }
 
 .home_button {
@@ -871,6 +871,7 @@ body.light-theme {
 
   .home_img {
     width: 300px;
+    height: 220px;
   }
 
   .about_info {
@@ -895,6 +896,11 @@ body.light-theme {
     column-gap: 0.25rem;
   }
 }
+@media screen and (max-width: 420px) {
+  .home_img {
+    height: 230px;
+  }
+}
 /* For medium devices */
 
 @media screen and (min-width: 576px) {
@@ -915,7 +921,9 @@ body.light-theme {
     text-align: left;
     line-height: 1.5rem;
   }
-
+  .home_img {
+    height: 245px;
+  }
   .skills_container {
     justify-content: center;
   }
@@ -973,6 +981,9 @@ body.light-theme {
     width: 250px;
   }
 
+  .home_img {
+    height: 250px;
+  }
   .contact_container {
     grid-template-columns: repeat(2, 250px);
     justify-content: center;
@@ -1004,12 +1015,13 @@ body.light-theme {
   }
 
   .home_handle {
-    width: 290px;
+    width: 300px;
     height: 300px;
   }
 
   .home_img {
-    width: 220px;
+    width: 100%;
+    height: 300px;
   }
   .home_social-link {
     padding: 0.4rem;
